@@ -1,0 +1,11 @@
+{
+  "name": "herledger",
+  "version": "1.0.0",
+  "description": "Trade reconciliation demo: standardise broker confirms, map securities, match against a book of record, manage exceptions.",
+  "private": true,
+  "scripts": {
+    "test": "node test.js",
+    "start": "npx --yes serve ."
+  },
+  "license": "UNLICENSED"
+}

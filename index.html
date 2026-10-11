@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HerLedger - Reconciliation Engine</title>
+  <meta name="description" content="Reconcile broker contract notes against Bonanza trade records, review discrepancies and record runs for exception management.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">HerLedger</div>
+    <nav id="nav" aria-label="Main">
+      <a href="#/reconcile" data-route="reconcile">Reconciliation</a>
+      <a href="#/runs" data-route="runs">Reconciliation Runs</a>
+      <a href="#/exceptions" data-route="exceptions">Exception Cases</a>
+      <a href="#/analytics" data-route="analytics">Exception Analytics</a>
+      <a href="#/notifications" data-route="notifications">Notifications <span id="notifCount" class="pill" hidden></span></a>
+    </nav>
+  </header>
+  <main id="app" tabindex="-1"></main>
+  <footer class="foot">Demo with illustrative sample data. All processing happens in your browser; no files are uploaded anywhere.</footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js" defer></script>
+  <script src="engine.js"></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
